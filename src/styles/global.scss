@@ -1,0 +1,20 @@
+//breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1284px;
+
+//colors
+$background-color: #f4f4f4;
+$border-color: #e2e2e2;
+$color-gray: rgb(119, 119, 119);
+
+* {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}

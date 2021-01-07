@@ -1,0 +1,17 @@
+@import "../../styles/global.scss";
+
+.section-box {
+  padding: 16px;
+
+  .section-name {
+    color: $color-gray;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+
+  .section-title {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}

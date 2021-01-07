@@ -1,0 +1,50 @@
+@import "../../styles/global.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+  // background: #f4f4f4;
+  width: 100%;
+  border-bottom: 1px solid $border-color;
+
+  .stack-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .image {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: $color-gray;
+  }
+
+  .firstName,
+  .lastName {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .jobTitle,
+  .location {
+    color: $color-gray;
+    text-transform: uppercase;
+  }
+  .location {
+    margin: 8px 0;
+    font-size: 0.8em;
+  }
+  .jobTitle {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .card {
+    margin-top: 60px;
+  }
+}

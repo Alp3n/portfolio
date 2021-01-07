@@ -1,0 +1,26 @@
+$hoverColor: rgb(43, 43, 43);
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  margin: 8px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+
+  &:active {
+    color: black;
+  }
+  &:visited {
+    color: black;
+  }
+  &:hover {
+    color: $hoverColor;
+  }
+
+  &:last-child {
+    background: black;
+    color: white;
+    border-radius: 36px;
+  }
+}

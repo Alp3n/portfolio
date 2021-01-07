@@ -1,0 +1,33 @@
+@import "../../styles/global.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: $background-color;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .navbar {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    border-top: 1px $border-color solid;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .navbar {
+    position: fixed;
+    width: 80%;
+    border-bottom: 1px $border-color solid;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .navbar {
+    position: fixed;
+    width: 50%;
+    border-bottom: 1px $border-color solid;
+  }
+}

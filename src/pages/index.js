@@ -1,22 +1,87 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
+import PageLayout from "../components/page-layout/page-layout"
+import Card from "../components/card/card"
+import Section from "../components/section/section"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const data = {
+  firstName: "Adam",
+  lastName: "Walukiewicz",
+  jobTitle: "full stack web developer",
+  location: "Bangkok, Thailand",
+  socialMedia: {
+    gitHub: "link",
+    linkedIn: "link",
+    twitter: "link",
+    facebook: "link",
+  },
+  sections: [
+    {
+      id: "about",
+      isSimple: true,
+      name: "About me",
+      simpleText: "something about me",
+      items: [
+        { title: "something", info: "something", href: null },
+        { title: "something", info: "something", href: null },
+        { title: "something", info: "something", href: null },
+        { title: "something", info: "something", href: null },
+      ],
+    },
+    {
+      id: "skills",
+      isSimple: false,
+      name: "Skills",
+      items: [
+        { title: "something", info: "something", href: null },
+        { title: "something", info: "something", href: null },
+        { title: "something", info: "something", href: null },
+      ],
+    },
+    {
+      id: "experience",
+      isSimple: false,
+      name: "Experience",
+      items: [
+        { title: "something", info: "something", href: null },
+        { title: "something", info: "something", href: null },
+        { title: "something", info: "something", href: null },
+      ],
+    },
+    {
+      id: "projects",
+      isSimple: false,
+      name: "Projects",
+      items: [
+        { title: "something", info: "something", href: null },
+        { title: "something", info: "something", href: null },
+        { title: "something", info: "something", href: null },
+      ],
+    },
+  ],
+}
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <PageLayout>
+      <Card
+        firstName={data.firstName}
+        lastName={data.lastName}
+        jobTitle={data.jobTitle}
+        location={data.location}
+      />
+      {data.sections.map(section => (
+        <Section
+          key={section.id}
+          sectionName={section.name}
+          itemsArray={section.items}
+          id={section.id}
+          isSimple={section.isSimple}
+          simpleText={section.simpleText}
+        />
+      ))}
+    </PageLayout>
+  )
+}
 
 export default IndexPage
