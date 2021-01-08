@@ -8,7 +8,8 @@ export default function Card({ firstName, lastName, img, jobTitle, location }) {
       <div className="card-details">
         <div className="stack-wrapper">
           <p className="firstName">{firstName}</p>
-          <div className="image">{img}</div>
+          {/*<img className="image" src={img} alt="portrait" />*/}
+          <div className="image"></div>
         </div>
         <p className="lastName">{lastName}</p>
 

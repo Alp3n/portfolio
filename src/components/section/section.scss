@@ -10,8 +10,7 @@
     text-transform: uppercase;
   }
 
-  .section-title {
-    font-weight: bold;
-    font-size: 1.2em;
+  &:last-child {
+    margin-bottom: 42px;
   }
 }

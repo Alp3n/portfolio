@@ -4,38 +4,59 @@ import PageLayout from "../components/page-layout/page-layout"
 import Card from "../components/card/card"
 import Section from "../components/section/section"
 
+import "../styles/index.scss"
+
 const data = {
   firstName: "Adam",
   lastName: "Walukiewicz",
   jobTitle: "full stack web developer",
   location: "Bangkok, Thailand",
-  socialMedia: {
-    gitHub: "link",
-    linkedIn: "link",
-    twitter: "link",
-    facebook: "link",
-  },
+  img: "/images/me.jpg",
+  socialMedia: [
+    {
+      gitHub: {
+        href: "link",
+        icon: "../images/icon",
+      },
+      linkedIn: {
+        href: "link",
+        icon: "../images/icon",
+      },
+      twitter: {
+        href: "link",
+        icon: "../images/icon",
+      },
+      facebook: {
+        href: "link",
+        icon: "../images/icon",
+      },
+      instagram: {
+        href: "link",
+        icon: "../images/icon",
+      },
+    },
+  ],
   sections: [
     {
       id: "about",
       isSimple: true,
       name: "About me",
-      simpleText: "something about me",
-      items: [
-        { title: "something", info: "something", href: null },
-        { title: "something", info: "something", href: null },
-        { title: "something", info: "something", href: null },
-        { title: "something", info: "something", href: null },
-      ],
+      simpleText:
+        "I am an IT student at Stamford International University located in Bangkok, Thailand. Right now I am finishing my senior year and focusing on my Web Development skills. I like to make USEFULL and PRETTY software. I am always eager to learn something new by myself but also appriciate knowledge from others.",
+      items: null,
     },
     {
       id: "skills",
       isSimple: false,
       name: "Skills",
       items: [
-        { title: "something", info: "something", href: null },
-        { title: "something", info: "something", href: null },
-        { title: "something", info: "something", href: null },
+        {
+          title: "Front End",
+          info: "HTML5, CSS3, SCSS, JavaScript, React",
+          href: null,
+        },
+        { title: "Back End", info: "Node.js, Express.js", href: null },
+        { title: "Databases", info: "MySQL, MongoDB", href: null },
       ],
     },
     {
@@ -43,9 +64,11 @@ const data = {
       isSimple: false,
       name: "Experience",
       items: [
-        { title: "something", info: "something", href: null },
-        { title: "something", info: "something", href: null },
-        { title: "something", info: "something", href: null },
+        {
+          title: "Signify Poland, Kętrzyn",
+          info: "Onsite IT Support, May 2017 - February 2018",
+          href: "https://www.signify.com/",
+        },
       ],
     },
     {
@@ -53,9 +76,9 @@ const data = {
       isSimple: false,
       name: "Projects",
       items: [
-        { title: "something", info: "something", href: null },
-        { title: "something", info: "something", href: null },
-        { title: "something", info: "something", href: null },
+        { title: "7", info: "something", href: null },
+        { title: "8", info: "something", href: null },
+        { title: "9", info: "something", href: null },
       ],
     },
   ],
@@ -69,6 +92,7 @@ const IndexPage = () => {
         lastName={data.lastName}
         jobTitle={data.jobTitle}
         location={data.location}
+        img={data.img}
       />
       {data.sections.map(section => (
         <Section

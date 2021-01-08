@@ -12,9 +12,12 @@ export default function Section({
   return (
     <div className="section-box" id={id}>
       <p className="section-name">{sectionName}</p>
-      {itemsArray.map(item => (
-        <SectionItem item={item} isSimple={isSimple} simpleText={simpleText} />
-      ))}
+
+      {isSimple ? (
+        <SectionItem isSimple={isSimple} simpleText={simpleText} />
+      ) : (
+        itemsArray.map(item => <SectionItem key={item.title} item={item} />)
+      )}
     </div>
   )
 }

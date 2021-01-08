@@ -6,13 +6,20 @@ export default function SectionItem({ item, isSimple, simpleText }) {
   return (
     <div className="section-item">
       {isSimple ? (
-        <p className="section-text">{simpleText}</p>
+        <p className="section-item-text">{simpleText}</p>
       ) : (
         <div>
-          <a className="section-title" href={item.link}>
+          <a
+            className={
+              item.href === null
+                ? "section-item-title"
+                : "section-item-title-link"
+            }
+            href={item.href}
+          >
             {item.title}
           </a>
-          <p className="section-info">{item.info}</p>
+          <p className="section-item-info">{item.info}</p>
         </div>
       )}
     </div>

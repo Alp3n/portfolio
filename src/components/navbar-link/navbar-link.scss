@@ -1,4 +1,4 @@
-$hoverColor: rgb(43, 43, 43);
+// @import "../../styles/global.scss";
 
 a {
   text-decoration: none;
@@ -15,12 +15,16 @@ a {
     color: black;
   }
   &:hover {
-    color: $hoverColor;
+    color: gray;
   }
 
   &:last-child {
     background: black;
     color: white;
     border-radius: 36px;
+  }
+
+  &:last-child:hover {
+    background: gray;
   }
 }
