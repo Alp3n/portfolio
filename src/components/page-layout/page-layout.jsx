@@ -2,7 +2,7 @@ import React from "react"
 import Navbar from "../navbar/navbar"
 import NavbarLink from "../navbar-link/navbar-link"
 
-import "./page-layout.scss"
+import pageLayoutStyles from "./page-layout.module.scss"
 
 const links = [
   {
@@ -24,13 +24,13 @@ const links = [
 
 export default function PageLayout({ children }) {
   return (
-    <div className="page-layout">
+    <div className={pageLayoutStyles.pageLayout}>
       <Navbar>
         {links.map(link => (
           <NavbarLink key={link.id} href={link.href} title={link.title} />
         ))}
       </Navbar>
-      <div className="main">{children}</div>
+      <div className={pageLayoutStyles.main}>{children}</div>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 @import "../../styles/global.scss";
 
-.section-item {
+.sectionItem {
   margin: 8px 0;
 
   p {
@@ -12,18 +12,18 @@
     padding: 0;
   }
 
-  .section-item-text {
+  .sectionItemText {
     text-align: justify;
   }
 
-  .section-item-title,
-  .section-item-title-link {
+  .sectionItemTitle,
+  .sectionItemTitleLink {
     font-weight: bold;
     font-size: 1.2em;
     text-transform: capitalize;
   }
 
-  &:hover.section-item-title {
+  &:hover.sectionItemTitle {
     color: black;
   }
 }

@@ -9,7 +9,7 @@
   width: 100%;
   border-bottom: 1px solid $border-color;
 
-  .stack-wrapper {
+  .stackWrapper {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -45,6 +45,6 @@
 
 @media (min-width: $breakpoint-tablet) {
   .card {
-    margin-top: 60px;
+    padding-top: 72px;
   }
 }

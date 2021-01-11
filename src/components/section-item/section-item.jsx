@@ -1,25 +1,23 @@
 import React from "react"
 
-import "./section-item.scss"
+import sectionItemStyles from "./section-item.module.scss"
 
 export default function SectionItem({ item, isSimple, simpleText }) {
   return (
-    <div className="section-item">
+    <div className={sectionItemStyles.sectionItem}>
       {isSimple ? (
-        <p className="section-item-text">{simpleText}</p>
+        <p className={sectionItemStyles.sectionItemText}>{simpleText}</p>
       ) : (
         <div>
           <a
             className={
-              item.href === null
-                ? "section-item-title"
-                : "section-item-title-link"
+              item.href === null ? "sectionItemTitle" : "sectionItemTitleLink"
             }
             href={item.href}
           >
             {item.title}
           </a>
-          <p className="section-item-info">{item.info}</p>
+          <p className={sectionItemStyles.sectionItemInfo}>{item.info}</p>
         </div>
       )}
     </div>

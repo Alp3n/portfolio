@@ -1,6 +1,6 @@
 import React from "react"
 import SectionItem from "../section-item/section-item"
-import "./section.scss"
+import sectionStyles from "./section.module.scss"
 
 export default function Section({
   sectionName,
@@ -10,8 +10,8 @@ export default function Section({
   simpleText,
 }) {
   return (
-    <div className="section-box" id={id}>
-      <p className="section-name">{sectionName}</p>
+    <div className={sectionStyles.sectionBox} id={id}>
+      <p className={sectionStyles.sectionName}>{sectionName}</p>
 
       {isSimple ? (
         <SectionItem isSimple={isSimple} simpleText={simpleText} />

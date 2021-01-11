@@ -1,12 +1,12 @@
 import React from "react"
 
-import "./social-media.scss"
+import socialMediaStyles from "./social-media.module.scss"
 
 export default function SocialMedia({ socialMedia }) {
   return (
-    <div className="social-media-wrapper">
-      <ul className="social-media-list">
-        <li className="social-media-list-item">
+    <div className={socialMediaStyles.socialMediaWrapper}>
+      <ul className={socialMediaStyles.socialMediaList}>
+        <li className={socialMediaStyles.socialMediaListItem}>
           <img src="" />
           <a href={socialMedia.href}>{socialMedia.name}</a>
         </li>

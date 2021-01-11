@@ -1,20 +1,20 @@
 import React from "react"
 
-import "./card.scss"
+import cardStyles from "./card.module.scss"
 
 export default function Card({ firstName, lastName, img, jobTitle, location }) {
   return (
-    <div className="card">
-      <div className="card-details">
-        <div className="stack-wrapper">
-          <p className="firstName">{firstName}</p>
+    <div className={cardStyles.card}>
+      <div className={cardStyles.cardDetails}>
+        <div className={cardStyles.stackWrapper}>
+          <p className={cardStyles.firstName}>{firstName}</p>
           {/*<img className="image" src={img} alt="portrait" />*/}
-          <div className="image"></div>
+          <div className={cardStyles.image}></div>
         </div>
-        <p className="lastName">{lastName}</p>
+        <p className={cardStyles.lastName}>{lastName}</p>
 
-        <p className="jobTitle">{jobTitle}</p>
-        <p className="location">Based in {location}</p>
+        <p className={cardStyles.jobTitle}>{jobTitle}</p>
+        <p className={cardStyles.location}>Based in {location}</p>
       </div>
     </div>
   )
