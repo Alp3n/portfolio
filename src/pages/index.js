@@ -3,6 +3,7 @@ import React from "react"
 import PageLayout from "../components/page-layout/page-layout"
 import Card from "../components/card/card"
 import Section from "../components/section/section"
+import Form from "../components/form/form"
 
 import "../styles/index.scss"
 
@@ -104,6 +105,7 @@ const IndexPage = () => {
           simpleText={section.simpleText}
         />
       ))}
+      <Form />
     </PageLayout>
   )
 }
