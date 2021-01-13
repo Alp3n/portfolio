@@ -11,7 +11,9 @@ export default function SectionItem({ item, isSimple, simpleText }) {
         <div>
           <a
             className={
-              item.href === null ? "sectionItemTitle" : "sectionItemTitleLink"
+              item.href === null
+                ? sectionItemStyles.sectionItemTitle
+                : sectionItemStyles.sectionItemTitleLink
             }
             href={item.href}
           >

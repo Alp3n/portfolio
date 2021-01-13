@@ -9,7 +9,7 @@ const formStructure = [
     placeholder: "Enter your name",
   },
   {
-    type: "text",
+    type: "email",
     name: "email",
     label: "Your email",
     placeholder: "Enter your email",
@@ -25,7 +25,7 @@ const formStructure = [
 
 function FormInput({ type, name, label, element, placeholder }) {
   return (
-    <div className={formStyles.inputWrapper}>
+    <div className={formStyles.inputWrapper} id="contact">
       <label className={formStyles.label}>{label}</label>
       {element === "textarea" ? (
         <textarea
@@ -50,8 +50,8 @@ function FormInput({ type, name, label, element, placeholder }) {
 export default function Form() {
   return (
     <div className={formStyles.formWrapper}>
-      <p className={formStyles.formTitle}>Contact me</p>
-      <form>
+      <form className={formStyles.form} action="#" method="post">
+        <p className={formStyles.formTitle}>Contact me</p>
         {formStructure.map(input => (
           <FormInput
             key={input.name}

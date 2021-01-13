@@ -56,8 +56,12 @@ const data = {
           info: "HTML5, CSS3, SCSS, JavaScript, React",
           href: null,
         },
-        { title: "Back End", info: "Node.js, Express.js", href: null },
-        { title: "Databases", info: "MySQL, MongoDB", href: null },
+        {
+          title: "Back End",
+          info: "Node.js, Express.js, REST, GraphQL",
+          href: null,
+        },
+        { title: "Databases", info: "MySQL, SQLite, MongoDB", href: null },
       ],
     },
     {
@@ -77,9 +81,17 @@ const data = {
       isSimple: false,
       name: "Projects",
       items: [
-        { title: "7", info: "something", href: null },
-        { title: "8", info: "something", href: null },
-        { title: "9", info: "something", href: null },
+        {
+          title: "AppThai",
+          info: "Create food stall orders and translate them to Thai!",
+          href: "https://github.com/alp3n/appthai-client",
+        },
+        {
+          title: "Simple Portfolio Generator",
+          info:
+            "Gatsby portfolio generator, just like the one you are browsing right now",
+          href: "https://github.com/alp3n/portfolio",
+        },
       ],
     },
   ],

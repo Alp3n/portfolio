@@ -1,6 +1,7 @@
 import React from "react"
 import Navbar from "../navbar/navbar"
 import NavbarLink from "../navbar-link/navbar-link"
+import Footer from "../footer/footer"
 
 import pageLayoutStyles from "./page-layout.module.scss"
 
@@ -31,6 +32,7 @@ export default function PageLayout({ children }) {
         ))}
       </Navbar>
       <div className={pageLayoutStyles.main}>{children}</div>
+      <Footer />
     </div>
   )
 }

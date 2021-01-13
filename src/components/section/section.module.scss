@@ -1,16 +1,12 @@
 @import "../../styles/global.scss";
 
 .sectionBox {
-  padding: 16px;
+  margin: 16px;
 
   .sectionName {
-    color: $color-gray;
+    color: black;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-transform: uppercase;
-  }
-
-  &:last-child {
-    margin-bottom: 42px;
   }
 }

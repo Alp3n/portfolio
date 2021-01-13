@@ -4,10 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px 0;
-  // background: #f4f4f4;
+  padding: 16px;
   width: 100%;
   border-bottom: 1px solid $border-color;
+  background: #f4f4f4;
 
   .stackWrapper {
     display: flex;
@@ -19,7 +19,9 @@
     width: 120px;
     height: 120px;
     border-radius: 100%;
-    background: $color-gray;
+    background-image: url("../../images/me.jpg");
+    background-position: center;
+    background-size: cover;
   }
 
   .firstName,
@@ -45,6 +47,12 @@
 
 @media (min-width: $breakpoint-tablet) {
   .card {
-    padding-top: 72px;
+    margin-top: 54px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .card {
+    padding-top: 54px;
   }
 }

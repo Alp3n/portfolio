@@ -3,17 +3,15 @@
 .sectionItem {
   margin: 8px 0;
 
-  p {
-    font-size: 1.05em;
-  }
-
   a {
     margin: 0;
     padding: 0;
   }
 
-  .sectionItemText {
+  .sectionItemText,
+  .sectionItemInfo {
     text-align: justify;
+    font-size: 1.05em;
   }
 
   .sectionItemTitle,
@@ -23,7 +21,20 @@
     text-transform: capitalize;
   }
 
-  &:hover.sectionItemTitle {
+  .sectionItemTitle {
+    color: $color-gray;
+  }
+
+  // .sectionItemTitle:hover {
+  //   color: black;
+  // }
+
+  .sectionItemTitleLink {
+    text-decoration: underline;
     color: black;
+
+    &:hover {
+      color: $color-gray;
+    }
   }
 }
