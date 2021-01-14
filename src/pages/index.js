@@ -6,6 +6,7 @@ import Section from "../components/section/section"
 import Form from "../components/form/form"
 
 import "../styles/index.scss"
+import SocialMedia from "../components/social-media/social-media"
 
 const data = {
   firstName: "Adam",
@@ -16,8 +17,8 @@ const data = {
   socialMedia: [
     {
       gitHub: {
-        href: "link",
-        icon: "../images/icon",
+        href: "https://github.com/alp3n",
+        icon: "../images/svg/005-github.svg",
       },
       linkedIn: {
         href: "link",
@@ -39,7 +40,7 @@ const data = {
   ],
   sections: [
     {
-      id: "about",
+      id: "aboutMe",
       isSimple: true,
       name: "About me",
       simpleText:
@@ -82,9 +83,9 @@ const data = {
       name: "Projects",
       items: [
         {
-          title: "AppThai",
+          title: "ThaiFood",
           info: "Create food stall orders and translate them to Thai!",
-          href: "https://github.com/alp3n/appthai-client",
+          href: "https://github.com/alp3n/thaifood-client",
         },
         {
           title: "Simple Portfolio Generator",

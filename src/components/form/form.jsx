@@ -1,6 +1,8 @@
 import React from "react"
 import formStyles from "./form.module.scss"
 
+import FormInput from "../form-input/form-input"
+
 const formStructure = [
   {
     type: "text",
@@ -22,30 +24,6 @@ const formStructure = [
     placeholder: "Leave me a message",
   },
 ]
-
-function FormInput({ type, name, label, element, placeholder }) {
-  return (
-    <div className={formStyles.inputWrapper} id="contact">
-      <label className={formStyles.label}>{label}</label>
-      {element === "textarea" ? (
-        <textarea
-          name={name}
-          id={name}
-          rows="5"
-          className={formStyles.textarea}
-          placeholder={placeholder}
-        />
-      ) : (
-        <input
-          type={type}
-          name={name}
-          className={formStyles.input}
-          placeholder={placeholder}
-        />
-      )}
-    </div>
-  )
-}
 
 export default function Form() {
   return (

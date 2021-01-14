@@ -1,13 +1,9 @@
 @import "../../styles/global.scss";
 
-.pageLayout {
-  // height: 100%;
-
-  .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (min-width: $breakpoint-tablet) {

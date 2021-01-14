@@ -1,6 +1,6 @@
 // @import "../../styles/global.scss";
 
-a {
+.navbarLink {
   text-decoration: none;
   text-transform: uppercase;
   padding: 8px 16px;
@@ -8,6 +8,7 @@ a {
   font-size: 1.1em;
   font-weight: bold;
   color: black;
+  border-radius: 36px;
 
   &:active {
     color: black;
@@ -16,16 +17,10 @@ a {
     color: black;
   }
   &:hover {
-    color: gray;
-  }
-
-  &:last-child {
     background: black;
     color: white;
-    border-radius: 36px;
-  }
 
-  &:last-child:hover {
-    background: gray;
+    transform: scale(1.05);
+    transition-duration: 300ms;
   }
 }
