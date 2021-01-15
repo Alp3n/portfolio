@@ -4,7 +4,19 @@ $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1284px;
 
 //colors
-$background-color: #f4f4f4;
-$background-white: #ffffff;
-$border-color: #e2e2e2;
+$color-navbar: rgba(255, 255, 255, 0.5);
+$color-background: rgb(244, 244, 244);
+$color-border: rgb(226, 226, 226);
+
+$color-white: rgb(255, 255, 255);
 $color-gray: rgb(119, 119, 119);
+$color-black: rgb(0, 0, 0);
+
+//gradients
+$gradient-background: linear-gradient(
+  90deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(244, 244, 244, 1) 33%,
+  rgba(244, 244, 244, 1) 66%,
+  rgba(255, 255, 255, 1) 100%
+);

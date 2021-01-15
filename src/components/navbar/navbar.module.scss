@@ -1,38 +1,39 @@
 @import "../../styles/global.scss";
 
+@mixin navbar-common {
+  position: fixed;
+  border-top: 1px $color-border solid;
+}
+
 .navbar {
-  background: rgba(255, 255, 255, 0.5);
+  background: $color-navbar;
   backdrop-filter: blur(5px);
   width: 100%;
 
   .navbarLinks {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-around;
   }
 }
 
 @media (max-width: $breakpoint-mobile) {
   .navbar {
+    @include navbar-common;
     bottom: 0;
-    position: fixed;
-    border-top: 1px $border-color solid;
   }
 }
 
 @media (min-width: $breakpoint-tablet) {
   .navbar {
-    position: fixed;
-    border-bottom: 1px $border-color solid;
+    @include navbar-common;
   }
 }
 
 @media (min-width: $breakpoint-desktop) {
   .navbar {
+    @include navbar-common;
     display: flex;
     justify-content: center;
-    position: fixed;
-    border-bottom: 1px $border-color solid;
 
     .navbarLinks {
       width: 60%;

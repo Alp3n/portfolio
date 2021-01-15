@@ -10,6 +10,7 @@ export default function Card({ firstName, lastName, img, jobTitle, location }) {
         <div className={cardStyles.stackWrapper}>
           <p className={cardStyles.firstName}>{firstName}</p>
           <div
+            aria-hidden="true"
             onMouseEnter={() => setAnimated(() => true)}
             onAnimationEnd={() => setAnimated(() => false)}
             className={animated ? cardStyles.imageAnimated : cardStyles.image}
