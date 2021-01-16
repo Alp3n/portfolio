@@ -3,6 +3,7 @@
 @mixin navbar-common {
   position: fixed;
   border-top: 1px $color-border solid;
+  z-index: 9999;
 }
 
 .navbar {

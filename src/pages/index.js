@@ -1,5 +1,6 @@
 import React from "react"
-// import { Link } from "gatsby"
+
+import SEO from "../components/seo/SEO"
 import PageLayout from "../components/page-layout/page-layout"
 import Card from "../components/card/card"
 import Section from "../components/section/section"
@@ -13,12 +14,14 @@ import { data } from "../data/data"
 const IndexPage = () => {
   return (
     <PageLayout>
+      <SEO />
       <Card
         firstName={data.firstName}
         lastName={data.lastName}
         jobTitle={data.jobTitle}
         location={data.location}
         img={data.img}
+        socialMedia={data.socialMedia}
       />
       {data.sections.map(section => (
         <Section

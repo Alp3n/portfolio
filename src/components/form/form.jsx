@@ -27,9 +27,17 @@ const formStructure = [
 
 export default function Form() {
   return (
-    <div className={formStyles.formWrapper}>
-      <form className={formStyles.form} action="#" method="post">
+    <div className={formStyles.formWrapper} id="contact">
+      <form
+        className={formStyles.form}
+        method="post"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+        name="contact"
+      >
         <p className={formStyles.formTitle}>Contact me</p>
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
         {formStructure.map(input => (
           <FormInput
             key={input.name}

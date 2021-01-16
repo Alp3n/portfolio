@@ -1,15 +1,23 @@
 import React from "react"
-import { FaGithub } from "@react-icons/all-files/fa/FaGithub"
+import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare"
+import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin"
 
 import socialMediaStyles from "./social-media.module.scss"
 
 export default function SocialMedia({ socialMedia }) {
+  const { gitHub, linkedIn } = socialMedia
   return (
     <div className={socialMediaStyles.socialMediaWrapper}>
-      <a href="www.github.com/alp3n" className="link">
-        Alp3n
-      </a>
-      <FaGithub size="2em" className="icon" />
+      <div>
+        <a href={gitHub.href} className="link">
+          <FaGithubSquare size="2.5em" className="icon" />
+        </a>
+      </div>
+      <div>
+        <a href={linkedIn.href} className="link">
+          <FaLinkedin size="2.5em" className="icon" />
+        </a>
+      </div>
     </div>
   )
 }

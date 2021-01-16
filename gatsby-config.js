@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Adam Walukiewicz`,
-    description: `Portfolio`,
+    description: `Adam's portfolio website`,
     author: `@github.com/alp3n`,
+    lang: `en`,
+    url: `www.adamwalukiewicz.dev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,8 +30,5 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

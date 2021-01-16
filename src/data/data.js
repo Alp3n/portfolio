@@ -4,30 +4,30 @@ export const data = {
   jobTitle: "full stack web developer",
   location: "Bangkok, Thailand",
   img: "/images/me.jpg",
-  socialMedia: [
-    {
-      gitHub: {
-        href: "https://github.com/alp3n",
-        icon: "../images/svg/005-github.svg",
-      },
-      linkedIn: {
-        href: "link",
-        icon: "../images/icon",
-      },
-      twitter: {
-        href: "link",
-        icon: "../images/icon",
-      },
-      facebook: {
-        href: "link",
-        icon: "../images/icon",
-      },
-      instagram: {
-        href: "link",
-        icon: "../images/icon",
-      },
+  socialMedia: {
+    gitHub: {
+      name: "GitHub",
+      href: "https://github.com/alp3n",
+      // icon: "../images/svg/005-github.svg",
     },
-  ],
+    linkedIn: {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/adam-walukiewicz-b08bb9164",
+      // icon: "../images/svg/004-linkedin.svg",
+    },
+    // twitter: {
+    //   href: "link",
+    //   icon: "../images/svg/002-twitter.svg",
+    // },
+    // facebook: {
+    //   href: "link",
+    //   icon: "../images/svg/003-facebook.svg",
+    // },
+    // instagram: {
+    //   href: "link",
+    //   icon: "../images/svg/001-instagram.svg",
+    // },
+  },
   sections: [
     {
       id: "aboutMe",
@@ -74,13 +74,14 @@ export const data = {
       items: [
         {
           title: "ThaiFood",
-          info: "Create food stall orders and translate them to Thai!",
+          info:
+            "Create food stall orders and translate them to Thai! (in-progress)",
           href: "https://github.com/alp3n/thaifood-client",
         },
         {
-          title: "Simple Portfolio Generator",
+          title: "Simple Portfolio Template",
           info:
-            "Gatsby portfolio generator, just like the one you are browsing right now",
+            "Gatsby portfolio template, just like the one you are browsing right now. (ready)",
           href: "https://github.com/alp3n/portfolio",
         },
       ],

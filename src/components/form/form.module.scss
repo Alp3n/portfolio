@@ -37,9 +37,9 @@
     box-shadow: none;
 
     &:hover {
+      @include box-shadow;
       outline: none;
       background: $color-gray;
-      box-shadow: none;
       border: none;
       cursor: pointer;
     }

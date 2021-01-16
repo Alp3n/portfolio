@@ -2,26 +2,20 @@
 
 .socialMediaWrapper {
   display: flex;
-  align-items: center;
-
-  .icon {
-    animation: rotate-icon 1s ease;
-  }
 
   a {
     &:link {
       text-decoration: none;
       color: $color-black;
     }
-  }
-}
-
-@keyframes rotate-icon {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
+    &:active {
+      color: $color-black;
+    }
+    &:visited {
+      color: $color-black;
+    }
+    &:hover {
+      color: $color-gray;
+    }
   }
 }

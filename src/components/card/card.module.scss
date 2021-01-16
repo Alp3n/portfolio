@@ -15,25 +15,6 @@
     justify-content: space-between;
   }
 
-  .image {
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    background-image: url("../../images/me.jpg");
-    background-position: center;
-    background-size: cover;
-  }
-
-  .imageAnimated {
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    background-image: url("../../images/me.jpg");
-    background-position: center;
-    background-size: cover;
-    animation: rotate-image 1.2s ease;
-  }
-
   .firstName,
   .lastName {
     font-size: 3em;
@@ -58,21 +39,5 @@
 @media (min-width: $breakpoint-tablet) {
   .card {
     margin-top: 54px;
-  }
-}
-
-@media (min-width: $breakpoint-desktop) {
-  .card {
-    padding-top: 54px;
-  }
-}
-
-@keyframes rotate-image {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
   }
 }
