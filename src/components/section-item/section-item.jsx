@@ -12,6 +12,7 @@ export default function SectionItem({ item, isSimple, simpleText }) {
           <a
             className={sectionItemStyles.sectionItemTitleLink}
             href={item.href}
+            target="_blank"
           >
             {item.title}
           </a>
