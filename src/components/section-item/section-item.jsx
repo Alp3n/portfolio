@@ -13,6 +13,7 @@ export default function SectionItem({ item, isSimple, simpleText }) {
             className={sectionItemStyles.sectionItemTitleLink}
             href={item.href}
             target="_blank"
+            rel="noreferrer"
           >
             {item.title}
           </a>

@@ -9,12 +9,17 @@ export default function SocialMedia({ socialMedia }) {
   return (
     <div className={socialMediaStyles.socialMediaWrapper}>
       <div>
-        <a href={gitHub.href} target="_blank" className="link">
+        <a href={gitHub.href} target="_blank" rel="noreferrer" className="link">
           <FaGithubSquare size="2.5em" className="icon" />
         </a>
       </div>
       <div>
-        <a href={linkedIn.href} target="_blank" className="link">
+        <a
+          href={linkedIn.href}
+          target="_blank"
+          rel="noreferrer"
+          className="link"
+        >
           <FaLinkedin size="2.5em" className="icon" />
         </a>
       </div>

@@ -34,7 +34,7 @@ export const data = {
       isSimple: true,
       name: "About me",
       simpleText:
-        "I am an IT student at Stamford International University located in Bangkok, Thailand. Right now I am finishing my senior year and focusing on my Web Development skills. I like to make USEFULL and PRETTY software. I am always eager to learn something new by myself but also appriciate knowledge from others.",
+        "I am an IT student at Stamford International University located in Bangkok, Thailand. Right now I am finishing my senior year and focusing on my Web Development skills. I like to make a useful and pretty software. I am always eager to learn something new by myself but also appreciate knowledge from others.",
       items: null,
     },
     {
@@ -49,9 +49,10 @@ export const data = {
         },
         {
           title: "Back End",
-          info: "Node.js, Express.js, REST, GraphQL",
+          info: "Node.js, Express.js",
           href: null,
         },
+        { title: "Other", info: "REST, GraphQL, Gatsby, Grommet", href: null },
         { title: "Databases", info: "MySQL, SQLite, MongoDB", href: null },
       ],
     },
@@ -64,6 +65,18 @@ export const data = {
           title: "Signify Poland, Kętrzyn",
           info: "Onsite IT Support, May 2017 - February 2018",
           href: "https://www.signify.com/",
+        },
+      ],
+    },
+    {
+      id: "education",
+      isSimple: false,
+      name: "Education",
+      items: [
+        {
+          title: "Stamford International University - Bangkok, Thailand",
+          info: "BSc in Information Technology, October 2018 - February 2021",
+          href: null,
         },
       ],
     },
