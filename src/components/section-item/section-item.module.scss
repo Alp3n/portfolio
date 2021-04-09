@@ -2,6 +2,7 @@
 
 .sectionItem {
   margin: 8px 0;
+  line-height: 1.6;
 
   a {
     margin: 0;
@@ -24,10 +25,6 @@
   .sectionItemTitle {
     color: $color-gray;
   }
-
-  // .sectionItemTitle:hover {
-  //   color: black;
-  // }
 
   .sectionItemTitleLink {
     text-decoration: underline;

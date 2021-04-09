@@ -11,7 +11,7 @@ export default function CardImage() {
         query ImageQuery {
           portrait: file(relativePath: { eq: "me.jpg" }) {
             childImageSharp {
-              fixed(width: 120, height: 120) {
+              fixed(width: 120, height: 120, quality: 100) {
                 ...GatsbyImageSharpFixed
               }
             }
