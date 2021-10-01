@@ -87,6 +87,12 @@ export const data = {
           href: "https://nhinstitute.pl",
         },
         {
+          title: "nhi-forms",
+          info:
+            "Application for managing and delivering custome forms for NHInstitute.",
+          href: "https://github.com/Alp3n/nhi-forms",
+        },
+        {
           title: "tenfertil",
           info:
             "Product website made with GatsbyJS, i18n, based on graphic design.",
@@ -96,6 +102,12 @@ export const data = {
           title: "WMES - Balancing",
           info: "PWA for Signify Kętrzyn, made with ReactJS.",
           href: "https://github.com/alp3n/wmes-balansowanie",
+        },
+        {
+          title: "tenfertil ona",
+          info:
+            "Product website made with GatsbyJS, i18n, based on graphic design.",
+          href: "https://tenfertilona.pl",
         },
         {
           title: "Simple Portfolio Template",
