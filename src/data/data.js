@@ -81,6 +81,12 @@ export const data = {
       name: "Projects",
       items: [
         {
+          title: "betterbetter",
+          info:
+            "Business website made with Wordpress CMS based on graphic design.",
+          href: "https://betterbetter.pl",
+        },
+        {
           title: "nhinstitute",
           info:
             "Business website made with GatsbyJS, i18n, based on graphic design.",
@@ -99,27 +105,15 @@ export const data = {
           href: "https://tenfertil.pl",
         },
         {
-          title: "WMES - Balancing",
-          info: "PWA for Signify Kętrzyn, made with ReactJS.",
-          href: "https://github.com/alp3n/wmes-balansowanie",
-        },
-        {
           title: "tenfertil ona",
           info:
             "Product website made with GatsbyJS, i18n, based on graphic design.",
           href: "https://tenfertilona.pl",
         },
         {
-          title: "Simple Portfolio Template",
-          info:
-            "Gatsby portfolio template, just like the one you are browsing right now.",
-          href: "https://github.com/alp3n/portfolio",
-        },
-        {
-          title: "ThaiFood",
-          info:
-            "Create food stall orders and translate them to Thai! (in-progress)",
-          href: "https://github.com/alp3n/thaifood-client",
+          title: "WMES - Balancing",
+          info: "PWA for Signify Kętrzyn, made with ReactJS.",
+          href: "https://github.com/alp3n/wmes-balansowanie",
         },
       ],
     },
